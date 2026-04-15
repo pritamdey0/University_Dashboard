@@ -1,56 +1,45 @@
-# GyanUday University — College Management System
+# 🎓 University Student Dashboard (Django)
 
-A full-stack Django project built as a 7-phase teaching project for 3rd year B.Tech students.
+A comprehensive **Student Management Dashboard** built using **Django**, designed to manage and streamline various academic and administrative tasks in one place.
 
-## Tech Stack
-- Python 3.13 · Django 4.2 · Django REST Framework · Chart.js · SQLite
+---
 
-## Quick Start
+## 🚀 Features
 
-```bash
-# 1. Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows
+- 📊 **Dashboard Overview**
+  - Quick insights into student activity, performance, and updates
 
-# 2. Install dependencies
-pip install -r requirements.txt
+- 📚 **Courses Management**
+  - Add, update, and manage courses
+  - Assign courses to students
 
-# 3. Run migrations
-python manage.py makemigrations
-python manage.py migrate
+- 🧾 **Attendance System**
+  - Track daily attendance
+  - View attendance reports
 
-# 4. Create superuser
-python manage.py createsuperuser
+- 💰 **Fees Management**
+  - Track fee payments
+  - Manage pending dues
 
-# 5. Start server
-python manage.py runserver
-```
+- 🧮 **Accounts Module**
+  - Maintain financial records
+  - Handle transactions and logs
 
-Open http://127.0.0.1:8000
+- 👨‍🎓 **Student Management**
+  - Add, update, and delete student records
+  - Store student profiles
 
-## Rebranding for a different college
+- 🔐 **Authentication System**
+  - Secure login/logout functionality
+  - Role-based access (Admin/Student)
 
-```bash
-python rebrand.py "Your College Name" "YCN"
-```
+---
 
-## Deploy to Render
+## 🛠️ Tech Stack
 
-1. Push to GitHub
-2. Go to render.com → New Web Service → connect repo
-3. Render auto-detects `render.yaml`
-4. Set environment variables: `SECRET_KEY`, `DEBUG=False`, `ALLOWED_HOSTS`
-5. Deploy — live in ~3 minutes
+- **Backend:** Django (Python)
+- **Frontend:** HTML, CSS, JavaScript (Bootstrap optional)
+- **Database:** SQLite (default) / PostgreSQL (optional)
 
-## Project Structure
+---
 
-```
-accounts/     Custom User model, login, roles
-students/     Department, Student, Faculty CRUD
-courses/      Course management, Enrollment
-attendance/   Attendance tracking, ORM aggregation
-fees/         Fee management, Payment tracking
-results/      Exams, Marks, Signals, Activity Log
-dashboard/    Live dashboard with Chart.js
-```
